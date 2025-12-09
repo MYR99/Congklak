@@ -1,0 +1,142 @@
+{
+  "languages": ["Indonesian", "English"],
+   "entries": {
+    "TUTORIAL_1": {
+      "Indonesian": "Selamat Datang di The Congklak!",
+      "English": "Welcome to The Congklak!"
+    },
+    "TUTORIAL_1_A": {
+      "Indonesian": "Congklak adalah permainan strategi tradisional untuk dua pemain.",
+      "English": "Congklak is a traditional two-player strategy board game."
+    },
+    "TUTORIAL_1_B": {
+      "Indonesian": "Kumpulkan biji sebanyak mungkin di lumbungmu untuk menang.",
+      "English": "Collect as many seeds as possible in your storehouse to win."
+    },
+
+    "TUTORIAL_2": {
+      "Indonesian": "Mengenal Papan",
+      "English": "Know the Board"
+    },
+    "TUTORIAL_2_A": {
+      "Indonesian": "7 lubang di bawah adalah milikmu. Kamu mengambil dan menabur biji dari sini.",
+      "English": "The 7 holes at the bottom are yours. You pick up and sow seeds from here."
+    },
+    "TUTORIAL_2_B": {
+      "Indonesian": "Lumbung besar di kiri adalah tempat skor kamu terkumpul.",
+      "English": "The big hole on the left is your storehouse and score."
+    },
+    "TUTORIAL_2_C": {
+      "Indonesian": "Lubang di atas dan lumbung kanan adalah milik lawan (AI).",
+      "English": "The top holes and right storehouse belong to the opponent (AI)."
+    },
+
+    "TUTORIAL_3": {
+      "Indonesian": "Cara Bermain Dasar",
+      "English": "Basic Gameplay"
+    },
+    "TUTORIAL_3_A": {
+      "Indonesian": "Klik salah satu dari 7 lubangmu untuk mulai.",
+      "English": "Click one of your 7 holes to start your turn."
+    },
+    "TUTORIAL_3_B": {
+      "Indonesian": "Ambil semua biji dan tabur satu per satu searah jarum jam.",
+      "English": "Take all the seeds and sow them one by one clockwise."
+    },
+    "TUTORIAL_3_C": {
+      "Indonesian": "Game akan pause dan menjelaskan jika ada aturan khusus.",
+      "English": "The game pauses and explains when special rules happen."
+    },
+
+    "CTX_EXTRA_TITLE": {
+      "Indonesian": "GILIRAN TAMBAHAN!",
+      "English": "EXTRA TURN!"
+    },
+    "CTX_EXTRA_BODY": {
+      "Indonesian": "Biji terakhir mendarat di lumbungmu. Kamu dapat giliran lagi!",
+      "English": "Your last seed landed in your storehouse. You get another turn!"
+    },
+
+    "CTX_CAPTURE_TITLE": {
+      "Indonesian": "TEMBAK!",
+      "English": "CAPTURE!"
+    },
+    "CTX_CAPTURE_BODY": {
+      "Indonesian": "Biji terakhir mendarat di lubang kosong milikmu. Kamu mengambil biji dari lubang seberang!",
+      "English": "Your last seed landed in an empty hole you own. You take the seeds from the opposite hole!"
+    },
+
+    "CTX_SOW_TITLE": {
+      "Indonesian": "LANJUT MENABUR",
+      "English": "KEEP SOWING"
+    },
+    "CTX_SOW_BODY": {
+      "Indonesian": "Biji terakhir mendarat di lubang berisi. Ambil semua dan lanjut menabur.",
+      "English": "Your last seed landed in a non-empty hole. Pick them up and continue sowing."
+    },
+
+    "PAUSE_TITLE": {
+      "Indonesian": "Permainan Dijeda",
+      "English": "Game Paused"
+    },
+    "PAUSE_SEEDS": {
+      "Indonesian": "Biji: {0}",
+      "English": "Seeds: {0}"
+    },
+    "PAUSE_PLAYER_TURN": {
+      "Indonesian": "Giliran: {0}",
+      "English": "Turn: {0}"
+    },
+
+    "MUSIC_TITLE": {
+      "Indonesian": "Musik",
+      "English": "Music"
+    },
+    "SFX_TITLE": {
+      "Indonesian": "SFX",
+      "English": "SFX"
+    },
+    "SOUND_TOGGLE_TITLE": {
+      "Indonesian": "Suara Aktif",
+      "English": "Sound Enabled"
+    },
+    "LANGUAGE_TITLE": {
+      "Indonesian": "Pilih Bahasa",
+      "English": "Select Language"
+    },
+    "LANGUAGE_OPTION": {
+      "Indonesian": "Bahasa Indonesia",
+      "English": "English"
+    },
+    "LANGUAGE_OPTION_ID": {
+      "Indonesian": "Bahasa Indonesia",
+      "English": "Indonesian"
+    },
+    "LANGUAGE_OPTION_EN": {
+      "Indonesian": "English",
+      "English": "English"
+    },
+
+    "SCORE_1": {
+      "Indonesian": "Pemain 1: {0}",
+      "English": "Player 1: {0}"
+    },
+    "SCORE_2": {
+      "Indonesian": "Pemain 2: {0}",
+      "English": "Player 2: {0}"
+    },
+
+    "GAME_END_WINNER": {
+      "Indonesian": "Pemenang: {0}",
+      "English": "Winner: {0}"
+    },
+    "GAME_END_FINAL_SCORE": {
+      "Indonesian": "Skor Akhir",
+      "English": "Final Score"
+    },
+    "GAME_END_STATS": {
+      "Indonesian": "Total Biji: {0}",
+      "English": "Total Seeds: {0}"
+    }
+  }
+}
