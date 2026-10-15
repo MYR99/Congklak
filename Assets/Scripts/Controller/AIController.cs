@@ -80,53 +80,41 @@ public class AIController : MonoBehaviour
         return list[Random.Range(0, list.Count)];
     }
 
-    private Hole FindBestMove_MediumLogic()
+    private Hole FindExtraTurnMove()
     {
-        var list = GetValidMoves();
-        if (list.Count == 0) return null;
-
-        foreach (var h in list)
+        foreach (var h in GetValidMoves())
             if (IsExtraTurn(h)) return h;
+        return null;
+    }
 
-        return FindBestMove_Random();
+    private Hole FindBestMove_MediumLogic()
+    {   
+        return FindExtraTurnMove() ?? FindBestMove_Random();
     }
 
     private Hole FindBestMove_HardLogic()
     {
-        Hole extra = FindBestMove_MediumLogic();
-        if (extra != null && IsExtraTurn(extra))
-            return extra;
+        Hole extra = FindExtraTurnMove();
+        if (extra != null) return extra;
 
-        var list = GetValidMoves();
-        if (list.Count == 0) return null;
+        Hole best = null;
+        int bestGain = 0;
 
-        Hole bestCapture = null;
-        int maxCapture = 0;
-
-        foreach (var hole in list)
+        foreach (var hole in GetValidMoves())
         {
             Hole last = SimulateSow(hole);
+            if (last == null || last.GetHoleType() != HoleType.PlayerTwo || last.GetSeedCount() != 0)
+                continue;
 
-            if (last != null &&
-                last.GetHoleType() == HoleType.PlayerTwo &&
-                last.GetSeedCount() == 0)
-            {
-                Hole opp = GetOppositeHole(last.GetHoleIndex());
-                if (opp != null)
-                {
-                    int capture = opp.GetSeedCount() + 1;
-                    if (capture > maxCapture)
-                    {
-                        maxCapture = capture;
-                        bestCapture = hole;
-                    }
-                }
-            }
+            Hole opposite = GetOppositeHole(last.GetHoleIndex());
+            if (opposite == null) continue;
+
+            int gain = opposite.GetSeedCount() + 1;
+            if (gain > bestGain) { bestGain = gain; best = hole; }
         }
-
-        return bestCapture ?? FindBestMove_Random();
+        return best ?? FindBestMove_Random();
     }
-
+ 
     private bool IsExtraTurn(Hole hole)
     {
         int seed = hole.GetSeedCount();
